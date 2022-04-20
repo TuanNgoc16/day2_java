@@ -1,13 +1,17 @@
 //1.7
-public class Date {
+public class date {
     int day ;
     int month ;
     int year ;
-    public Date (int a, int b, int c ){
-        day = a;
-        month = b ;
-        year = c ;
+    public date (int a, int b, int c ) {
+        if (a >= 1 && a <= 31) {
+        }
+        if (b >= 1 && a <= 12) {
+        }
+        if (c >= 1990 && a <= 9999) {
+        }
     }
+       
     public int getDay () {
         return day;
     }
@@ -27,3 +31,4 @@ public class Date {
         return  + day+ " / " + month  +" / " + year  ;
     }
 }
+

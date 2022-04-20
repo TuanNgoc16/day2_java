@@ -3,9 +3,9 @@ public class Time {
     int minute ;
     int second ;
     public Time ( int a , int b , int c) {
-        hour = a;
-        minute = b ;
-        second = c ;
+        if ( a >= 0 && a <= 23){}
+        if ( b >= 0 && b <= 59){}
+        if ( c >= 0 && c <= 59){}
     }
     public int getHour () {
         return  hour ;
@@ -24,6 +24,10 @@ public class Time {
     }
     public void setSecond ( int c) {
         c = second;
+    }
+    public int nextSecond ( ) {
+        second ++;
+        return nextSecond();
     }
     public void setTime ( int a , int b, int c) {
         a = hour;

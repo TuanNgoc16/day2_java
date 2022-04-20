@@ -23,7 +23,7 @@ public class Employee {
         return  salary;
     }
     public int getAnnalSalary () {
-        return  salary * 2 ;
+        return  salary * 12 ;
     }
     public String toString () {
         return "Employee [ ID = " + id + "Name  " + firstName  + lastName + "," + " Salary " + salary  ;
